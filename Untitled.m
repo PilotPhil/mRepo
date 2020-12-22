@@ -1,9 +1,3 @@
-z=[-5];
-p=[0,-1,-3,-12];
-k=[1]
-
-G=zpk(z,p,k);
-rlocus(G)
-[k,poles]=rlocfind(G)
-
-
+syms n x pi
+f=(x^2-1).*cos(((2.*n-1)/2).*pi.*x)
+I =2*int(f,[0,1])

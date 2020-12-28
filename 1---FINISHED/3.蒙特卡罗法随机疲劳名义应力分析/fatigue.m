@@ -20,7 +20,7 @@ subplot(3,2,3);plot(1:length(Ln),Ln,'b-');title('加噪声后的载荷时间序列');ylabel
 subplot(3,2,4);FTTA(Ln,100);
 
 % Step E.2 滤波
-R=filter(bp1,Ln);%
+R=filter(bp,Ln);%
 subplot(3,2,5);plot(1:length(R),R,'b-');title('滤波后的载荷时间序列');ylabel('载荷值');
 subplot(3,2,6);FTTA(R,100);
 

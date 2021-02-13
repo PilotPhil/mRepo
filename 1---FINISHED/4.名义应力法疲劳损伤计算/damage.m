@@ -30,7 +30,7 @@ K=[5.8E12,3.464E12,1.52E12,1.026E12,6.319E11,4.33E11,2.481E11,9.279E10];
 Nmax=log10(K(i))-3*log10(S);
 Nmax=10.^Nmax;
 
-tem=S./Nmax;
+tem=1./Nmax;
 D=sum(tem);
 end
 

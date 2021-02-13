@@ -1,7 +1,0 @@
-val=[1,2,3,4,5,6,3,4,1,8,4,3,2,6,4,8,3,1,5,78,32,5,9,1,0]
-[c,hist,edges,rmm,idx] = rainflow(val);
-
-T = array2table(c,'VariableNames',{'Count','Range','Mean','Start','End'})
-
-
-plot()

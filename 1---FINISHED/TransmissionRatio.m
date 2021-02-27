@@ -3,12 +3,17 @@
 % @Pilot-Phil
 % https://github.com/PilotPhil?tab=repositories
 
-front=[24,32,34,42];% ÑÀÅÌ
+front=32;% ÑÀÅÌ
 after=[11,13,16,20,24,28,34,40];% ·ÉÂÖ
+after2=[11,13,15,18,21,24,28,32];% ·ÉÂÖ
 
 hold on;
 
-for i=front
-    ratio=i./after;
-    plot(after,ratio,'-*');
-end
+figure(1)
+ratio=front./after;
+plot(after,ratio,'-r');
+
+% figure(2)
+ratio2=front./after2;
+after2=after+2;
+plot(after2,ratio2,'-b');
